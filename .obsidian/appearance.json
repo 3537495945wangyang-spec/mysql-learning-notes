@@ -1,4 +1,11 @@
 {
-  "theme": "obsidian",
-  "accentColor": "#8d61f5"
+  "theme": "moonstone",
+  "accentColor": "#8d61f5",
+  "cssTheme": "Dune",
+  "interfaceFontFamily": "Comic Sans MS,杨任东竹石体",
+  "textFontFamily": "杨任东竹石体",
+  "monospaceFontFamily": "Comic Sans MS",
+  "baseFontSize": 18,
+  "baseFontSizeAction": true,
+  "nativeMenus": false
 }
