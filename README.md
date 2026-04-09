@@ -19,3 +19,36 @@
 - 不建议使用\作为通配符 
 - 单词的大小写并不重要，不过写好一点容易看‘
 - 注意select语句最后没有逗号
+
+## 2026-4-9
+- 带有any 或者 all 的父子查询
+- 记得要写出==父查询块中的条件==
+```sql
+select Sname , Sbirthdate
+
+from `mysql-study`.student
+
+where Sbirthdate >all(
+
+select Sbirthdate
+
+from `mysql-study`.student
+
+where Smajor = '计算机科学与技术')
+
+and Smajor<>'计算机科学与技术'
+```
+- 带有exists的查询
+- 若==*where子句返回值为真==*则去外层查询中该元祖的结果表
+- where中的select后面直接写==‘星号’==就好 因为是为了返回真假
+```sql
+select Sname
+
+from `mysql-study`.student
+
+where exists (
+
+select * from `mysql-study`.sc
+
+where Sno = Student.Sno and Cno = '81001');
+```
