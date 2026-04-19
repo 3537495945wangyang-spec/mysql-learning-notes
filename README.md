@@ -80,7 +80,7 @@ where exists(select *
 
 ### - ==双重否定not exists==
 	**“查询选修了全部课程的学生姓名”**，核心思路是用 `NOT EXISTS`+ **双重否定（逻辑上的“不存在没选修的课程”**
-	```sql
+```sql
 	select Sname
 
 	from student
@@ -97,6 +97,8 @@ where exists(select *
 
 					);
 	```
+
+```
 	用自然语言翻译逻辑：
 - 学生 `S`选修了全部课程 ⇨ 不存在任何一门课程，是学生 `S`没选的。SQL 通过两次 `NOT EXISTS`实现这个逻辑：
 	1. 内层 `NOT EXISTS`：判断“学生是否选了某门课”（选了则排除，没选则保留）。
