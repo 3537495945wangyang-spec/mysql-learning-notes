@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a8aa21a23cea4f55",
@@ -164,12 +165,24 @@
               "icon": "lucide-list",
               "title": "README 的大纲"
             }
+          },
+          {
+            "id": "ff69bc17f0d3aff3",
+            "type": "leaf",
+            "state": {
+              "type": "khoj-chat-view",
+              "state": {},
+              "icon": "message-circle",
+              "title": "Khoj Chat"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,6 +200,15 @@
   },
   "active": "e5d61a5882cdb5dc",
   "lastOpenFiles": [
+    "Data Structure and Algorithms..md",
+    "Sharpen your thinking..md",
+    "1776174978471.jpg",
+    "未命名.canvas",
+    "JavaSE.md",
+    "CET-6.md",
+    "欢迎.md",
+    "未命名",
+    "General/Scripts/4-19exists.sql",
     "General/Scripts/4-9NestedQuery.sql",
     "learning from github.md",
     "README.md"
