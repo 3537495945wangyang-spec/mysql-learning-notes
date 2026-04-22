@@ -138,3 +138,71 @@ from sc ,(select Sno,AVG(Grade) from sc group by Sno)
 where sc.Sno = avg_sc.avg_sno and sc.Grade >= avg_sc.avg_grade ;
 ```
 
+## 4-22
+### 数据更新
+- 插入元组
+	- insert into <表名> （属性）
+	 values()
+	- into指出表名 指出哪些属性要赋值，属性的**顺序可以与table中的不一样**
+		value子句要按照into子句指定的次序赋值
+	- into后面**没有指出属性**
+		values要在表的**所有属性列**上都指定值
+		属性列的次序与table中的次序相同
+	- **没有值的列，DBMS会自动赋空值**
+- 插入子查询结果
+	- insert into <表名>(属性)
+	```sql
+	-- create table Smajor_age(Smajor varchar(20),Avg_age smallint);
+
+	insert into smajor_age(Smajor,Avg_age )
+
+	select Smajor,AVG(extract(year from current_date)-
+	extract(year from Sbirthdate))
+
+	from student
+
+	group by smajor;
+	```
+- 修改数据
+	update<表名>
+	set<列名> = <表达式> 
+	where <条件>
+- 删除数据
+	delete from <表名>
+	where <条件>
+### 空值的处理
+- 插入数据时 一些属性列可设置为null
+- 修改时set后面可以把一些内容设置为null
+- **无法设置为空**时需要修改表格设定
+	==ALTER TABLE student MODIFY Smajor 数据类型 NULL;==
+	
+- 空值的判断 用is null 或者 is not null 表示属性是否为空
+		主码不允许为空值，不许漏填 
+		属性定义为not null也不允许为空值
+- 
+```sql	
+select * from student
+where Sname is null or Ssex is null		
+or Sbirthdate is null or Smajor is null ;
+```
+
+- **空值的运算**
+	- ![[Pasted image 20260422122010.png|614]]![[Pasted image 20260422122034.png|392]]
+	- and 都是T结果才是T，既有T又有U 结果是U ，只要有F结果就是F
+	- or   都是F结果才是F，既有F又有U 结果是U ，只要有T结果就是
+
+### 视图
+- 建立视图
+	create view <视图名>（列名）
+	as<子查询>
+	【with check option】
+	==尽可能不要省略列名，避免出错==
+```sql
+-- 建立信息管理与信息系统专业学生视图
+create view is_student(Isno,Isname,Isex,Ibirthdate,Imajor)
+as select Sno , Sname,ssex,sbirthdate,smajor
+from student
+where Smajor = '信息管理与信息系统'
+with check option;/*保证数据更新时只有信息管理与信息系统专业的学生*/
+```
+- 视图也可以建立在一个或者多个已定义好的视图上
