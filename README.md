@@ -195,7 +195,7 @@ or Sbirthdate is null or Smajor is null ;
 - 建立视图
 	create view <视图名>（列名）
 	as<子查询>
-	【with check option】
+	【with check option】表示进行更新 插入 删除需要满足子查询表达式
 	==尽可能不要省略列名，避免出错==
 ```sql
 -- 建立信息管理与信息系统专业学生视图
@@ -206,3 +206,12 @@ where Smajor = '信息管理与信息系统'
 with check option;/*保证数据更新时只有信息管理与信息系统专业的学生*/
 ```
 - 视图也可以建立在一个或者多个已定义好的视图上
+- 删除视图
+	drop view <视图名> CASCADE
+		**CASCADE表示删除有该视图导出的其他视图**
+- 查询视图
+	与查询基本表相同![[Pasted image 20260423211848.png]]
+- 更新视图
+	- 视图的更新操作通过视图消解转换为对==基本表的更新==操作
+	- ==加上with check option==防止用户无意中对
+		==不属于视图范围==的基本表进行操作
