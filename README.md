@@ -215,3 +215,28 @@ with check option;/*保证数据更新时只有信息管理与信息系统专业
 	- 视图的更新操作通过视图消解转换为对==基本表的更新==操作
 	- ==加上with check option==防止用户无意中对
 		==不属于视图范围==的基本表进行操作
+## 4-24 第三章练习题
+- 建表时
+	- ==默认值==写法是 Ssex CHAR(1) default '男'
+	- ==限制值==的范围写法Sage INT check ( Sage between 15 and 45)
+	- 最后保证中文可以使用==ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;==
+- 通配符写法where Cname like 'MIS￥_%系_' escape '￥';
+	- %指代多个字符  _指代单个字符![[Pasted image 20260424154012.png]]
+- 聚集函数![[Pasted image 20260424154438.png]]
+- order by 子句可以用于排序 asc升序 desc降序
+- int类型一般比较时不需要带引号
+- 基于派生表的查询 在from的括号里面再写一次select语句创立一个派生表，==必须起别名==
+```sql
+-- （14） 查询各不同平均成绩所对应的学生人数（给出平均成绩与其对应的人数）。
+
+select avg_grade , count(*)
+
+from (select sno ,avg(grade) as avg_grade
+
+	from sc
+
+	group by sno ) t
+
+group by avg_grade ;
+
+```
