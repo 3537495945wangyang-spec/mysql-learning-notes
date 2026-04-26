@@ -240,3 +240,19 @@ from (select sno ,avg(grade) as avg_grade
 group by avg_grade ;
 
 ```
+## 第三章练习题2
+- 删除表格 drop table （表名）；
+- 删除表格数据 delete from （表明）；
+- 外键
+	- **外键（Foreign Key）**​ 是表中的一个或多个字段，
+		它们的值必须匹配另一张表的主键（或唯一键）中的值，用来维护 **参照完整性（Referential Integrity）**。
+	- FOREIGN KEY (SNO)         REFERENCES S(SNO)
+		声明这是一个外键      引用 参照
+- 需要满足==条件1且条件2== 的时候使用==not exists==
+- 需要满足==条件1或条件2 ==的时候使用==连接==
+- 删除供应商以及相关供应记录时，先删除供应记录
+
+
+
+
+
