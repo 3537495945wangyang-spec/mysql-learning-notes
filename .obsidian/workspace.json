@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "六级英语语料.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "六级英语语料"
             }
           }
         ]
@@ -199,29 +199,35 @@
   },
   "active": "e5d61a5882cdb5dc",
   "lastOpenFiles": [
-    "General/Scripts/4-26exercise2.sql",
-    "Data Structure and Algorithms..md",
-    "learning from github.md",
-    "JavaSE.md",
-    "未命名.base",
-    "欢迎.md",
-    "图片/1776174978471.jpg",
-    "图片/Pasted image 20260424154438.png",
-    "图片",
-    "图片/Pasted image 20260422120232.png",
-    "README.md",
-    "Sharpen your thinking..md",
     "CET-6.md",
-    "未命名.canvas",
+    "Data Structure and Algorithms..md",
+    "Pasted image 20260429103823.png",
+    "Pasted image 20260429103552.png",
+    "JavaSE.md",
+    "learning from github.md",
+    "Pasted image 20260429110509.png",
+    "Pasted image 20260429103837.png",
+    "六级英语语料.md",
+    "图片/Pasted image 20260429103552.png",
+    "图片/Pasted image 20260429110509.png",
+    "图片/Pasted image 20260429103837.png",
+    "图片/Pasted image 20260429103823.png",
+    "README.md",
+    "haunt.md",
+    "未命名",
+    "General/Scripts/5-14实验报告2.sql",
+    "General/Scripts/5-7实验报告1.sql",
     "图片/Pasted image 20260424154012.png",
     "图片/Pasted image 20260422122034.png",
-    "图片/Pasted image 20260422122010.png",
+    "欢迎.md",
+    "未命名.base",
+    "General/Scripts/4-26exercise2.sql",
+    "图片",
+    "Sharpen your thinking..md",
+    "未命名.canvas",
     "General/Scripts/4-24exercise1.sql",
     "General/Scripts/4-23view.sql",
-    "图片/Pasted image 20260423211848.png",
     "General/Scripts/4-22UpdateandView.sql",
-    "未命名",
-    "General/Scripts/4-19exists.sql",
-    "General/Scripts/4-9NestedQuery.sql"
+    "General/Scripts/4-19exists.sql"
   ]
 }

@@ -252,7 +252,26 @@ group by avg_grade ;
 - 需要满足==条件1或条件2 ==的时候使用==连接==
 - 删除供应商以及相关供应记录时，先删除供应记录
 
+## 4-29 第四章 数据库安全性
 
-
-
-
+- ==可信计算机系统评估准则 TCSEC==
+	![[Pasted image 20260429103552.png]]
+	 D是最高由D向A逐渐增高
+	 C对应企业安全，B对应政府机关
+- 评估保证级 CC EAL
+- ![[Pasted image 20260429103823.png]]
+- ![[Pasted image 20260429103837.png]]
+- 授权与收回对数据的操作权限
+- grant <权限>
+	on  <对象 表格名>
+	to  <用户>
+	with grant option;允许用户将权限再授予其他用户 
+- revoke <权限>
+	on <表名>
+	from <用户> （cascade|restrict）
+	cascade ==级联收回权限==
+	restrict 如果转授了权限则不能收回
+-  create user < username >with
+	superuser |createdb
+	password 'password' ;
+	![[Pasted image 20260429110509.png]]

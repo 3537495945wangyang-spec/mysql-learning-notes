@@ -80,6 +80,8 @@ Instance 例子
 
 Tremendous 巨大的 极好的
 
+==1==
+
 -        普通
 
 Coordinate 同等的 v 协调 调整
@@ -167,6 +169,7 @@ Access 接近 靠近
 Accessible 平易近人的 易接近的
 
 Accessory 附件 附属品
+2
 
 Ascend 上升 登上
 
@@ -224,6 +227,8 @@ Deteriorate 恶化 退化
 
 Deterioration 恶化
 
+****
+-----==------==
 Day02
 
 -        吓唬
@@ -405,7 +410,8 @@ Swamp 淹没
 Overwhelm （车轮wheel）压倒
 
 Reel  n卷轴 v旋转 震惊
-
+。==……==
+****
 -        Re
 
 Adore 爱慕 崇拜
@@ -499,6 +505,8 @@ Scenic 风景优美的
 Scenario 场景设想 可能发生
 
 Landscape 风景 景色
+****
+
 
 Day 04
 
@@ -976,7 +984,7 @@ Startle 使惊讶
 
 Obtain 赢得
 
-Day08
+ Day08
 
 -        冒犯
 
@@ -1060,7 +1068,7 @@ Misleading 误导的
 
 Steer 驾驶 引导
 
-     Day09
+     Day09
 
 -        Pro pre 往前 在前
 
